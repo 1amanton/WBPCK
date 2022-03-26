@@ -126,7 +126,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \******************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Post__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Post */ \"./Post.js\");\n/* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/style.css */ \"./styles/style.css\");\n\r\n\r\n\r\n\r\nconst post = new _Post__WEBPACK_IMPORTED_MODULE_0__[\"default\"](`Webpack Post Title`)\r\nconsole.log(`Post to String: ${post.toString()}`)\n\n//# sourceURL=webpack:///./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Post__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Post */ \"./Post.js\");\n/* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/style.css */ \"./styles/style.css\");\n/* harmony import */ var _assets_jsonfile__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/jsonfile */ \"./assets/jsonfile.json\");\n\r\n\r\n\r\n\r\n\r\nconst post = new _Post__WEBPACK_IMPORTED_MODULE_0__[\"default\"](`Webpack Post Title`)\r\nconsole.log(`Post to String: ${post.toString()}`)\r\n\r\nconsole.log(\"JSON\", _assets_jsonfile__WEBPACK_IMPORTED_MODULE_2__)\n\n//# sourceURL=webpack:///./index.js?");
+
+/***/ }),
+
+/***/ "./assets/jsonfile.json":
+/*!******************************!*\
+  !*** ./assets/jsonfile.json ***!
+  \******************************/
+/***/ ((module) => {
+
+eval("module.exports = JSON.parse('{\"title\":\"I am JSON title\"}');\n\n//# sourceURL=webpack:///./assets/jsonfile.json?");
 
 /***/ })
 
