@@ -16,7 +16,7 @@
   \*****************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"../node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"../node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \".container {\\r\\n    padding: 2rem 0;\\r\\n    max-width: 1000px;\\r\\n    margin: 0 auto;\\r\\n}\\r\\n\\r\\nh1 {\\r\\n    text-align: center;\\r\\n    color: orangered;\\r\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack:///./styles/style.css?../node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"../node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"../node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \".container {\\r\\n    padding: 2rem 0;\\r\\n    max-width: 1000px;\\r\\n    margin: 0 auto;\\r\\n}\\r\\n\\r\\nh1 {\\r\\n    text-align: center;\\r\\n    color: orangered;\\r\\n}\\r\\n\\r\\n.logo {\\r\\n    padding-top: 2rem;\\r\\n    width: 350px;\\r\\n    height: 300px;\\r\\n    margin: 0 auto;\\r\\n    margin: 0 auto;\\r\\n    display: block;\\r\\n\\r\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack:///./styles/style.css?../node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -37,6 +37,16 @@ eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n
 /***/ ((module) => {
 
 eval("\n\nmodule.exports = function (i) {\n  return i[1];\n};\n\n//# sourceURL=webpack:///../node_modules/css-loader/dist/runtime/noSourceMaps.js?");
+
+/***/ }),
+
+/***/ "./assets/fox.png":
+/*!************************!*\
+  !*** ./assets/fox.png ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"cec89178bf6cb7d593d3f8d7271d578f.png\");\n\n//# sourceURL=webpack:///./assets/fox.png?");
 
 /***/ }),
 
@@ -116,7 +126,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \*****************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Post)\n/* harmony export */ });\nclass Post {\r\n    constructor(title) {\r\n        this.title = title\r\n        this.data = new Date()\r\n    }\r\n\r\n    toString() {\r\n        return JSON.stringify({\r\n            title: this.title,\r\n            date: this.data.toJSON()\r\n        })\r\n    }\r\n}\r\n\n\n//# sourceURL=webpack:///./Post.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Post)\n/* harmony export */ });\nclass Post {\r\n    constructor(title, img) {\r\n        this.title = title\r\n        this.data = new Date()\r\n        this.img = img\r\n    }\r\n\r\n    toString() {\r\n        return JSON.stringify({\r\n            title: this.title,\r\n            date: this.data.toJSON(),\r\n            img: this.img\r\n        })\r\n    }\r\n}\r\n\n\n//# sourceURL=webpack:///./Post.js?");
 
 /***/ }),
 
@@ -126,7 +136,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \******************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Post__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Post */ \"./Post.js\");\n/* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/style.css */ \"./styles/style.css\");\n/* harmony import */ var _assets_jsonfile__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/jsonfile */ \"./assets/jsonfile.json\");\n\r\n\r\n\r\n\r\n\r\nconst post = new _Post__WEBPACK_IMPORTED_MODULE_0__[\"default\"](`Webpack Post Title`)\r\nconsole.log(`Post to String: ${post.toString()}`)\r\n\r\nconsole.log(\"JSON\", _assets_jsonfile__WEBPACK_IMPORTED_MODULE_2__)\n\n//# sourceURL=webpack:///./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Post__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Post */ \"./Post.js\");\n/* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/style.css */ \"./styles/style.css\");\n/* harmony import */ var _assets_jsonfile__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/jsonfile */ \"./assets/jsonfile.json\");\n/* harmony import */ var _assets_fox_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./assets/fox.png */ \"./assets/fox.png\");\n\r\n\r\n\r\n\r\n\r\nconst post = new _Post__WEBPACK_IMPORTED_MODULE_0__[\"default\"](`Webpack Post Title`, _assets_fox_png__WEBPACK_IMPORTED_MODULE_3__[\"default\"])\r\nconsole.log(`Post to String: ${post.toString()}`)\r\n\r\nconsole.log(\"JSON\", _assets_jsonfile__WEBPACK_IMPORTED_MODULE_2__)\r\n\r\ndocument.querySelector(\".logo\").src = _assets_fox_png__WEBPACK_IMPORTED_MODULE_3__[\"default\"]\n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ }),
 
@@ -191,6 +201,18 @@ eval("module.exports = JSON.parse('{\"title\":\"I am JSON title\"}');\n\n//# sou
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -205,6 +227,26 @@ eval("module.exports = JSON.parse('{\"title\":\"I am JSON title\"}');\n\n//# sou
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /************************************************************************/

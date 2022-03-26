@@ -8,3 +8,13 @@ h1 {
     text-align: center;
     color: orangered;
 }
+
+.logo {
+    padding-top: 2rem;
+    width: 350px;
+    height: 300px;
+    margin: 0 auto;
+    margin: 0 auto;
+    display: block;
+
+}
