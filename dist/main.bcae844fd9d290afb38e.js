@@ -150,23 +150,23 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
-/***/ "./Post.js":
-/*!*****************!*\
-  !*** ./Post.js ***!
-  \*****************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Post)\n/* harmony export */ });\nclass Post {\n    constructor(title, img) {\n        this.title = title\n        this.data = new Date()\n        this.img = img\n    }\n\n    toString() {\n        return JSON.stringify({\n            title: this.title,\n            date: this.data.toJSON(),\n            img: this.img\n        })\n    }\n}\n\n\n//# sourceURL=webpack:///./Post.js?");
-
-/***/ }),
-
 /***/ "./index.js":
 /*!******************!*\
   !*** ./index.js ***!
   \******************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Post__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Post */ \"./Post.js\");\n/* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/style.css */ \"./styles/style.css\");\n/* harmony import */ var _assets_jsonfile__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/jsonfile */ \"./assets/jsonfile.json\");\n/* harmony import */ var _assets_fox__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./assets/fox */ \"./assets/fox.png\");\n\n\n\n\n\nconst post = new _Post__WEBPACK_IMPORTED_MODULE_0__[\"default\"](`Webpack Post Title`, _assets_fox__WEBPACK_IMPORTED_MODULE_3__[\"default\"])\nconsole.log(`Post to String: ${post.toString()}`)\n\nconsole.log(\"JSON\", _assets_jsonfile__WEBPACK_IMPORTED_MODULE_2__)\n\ndocument.querySelector(\".logo\").src = _assets_fox__WEBPACK_IMPORTED_MODULE_3__[\"default\"]\n\n//# sourceURL=webpack:///./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _models_Post__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @models/Post */ \"./models/Post.js\");\n/* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @styles/style.css */ \"./styles/style.css\");\n/* harmony import */ var _assets_jsonfile__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/jsonfile */ \"./assets/jsonfile.json\");\n/* harmony import */ var _assets_fox__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @assets/fox */ \"./assets/fox.png\");\n\n\n\n\n\nconst post = new _models_Post__WEBPACK_IMPORTED_MODULE_0__[\"default\"](`Webpack Post Title`, _assets_fox__WEBPACK_IMPORTED_MODULE_3__[\"default\"])\nconsole.log(`Post to String: ${post.toString()}`)\n\nconsole.log(\"JSON\", _assets_jsonfile__WEBPACK_IMPORTED_MODULE_2__)\n\ndocument.querySelector(\".logo\").src = _assets_fox__WEBPACK_IMPORTED_MODULE_3__[\"default\"]\n\n//# sourceURL=webpack:///./index.js?");
+
+/***/ }),
+
+/***/ "./models/Post.js":
+/*!************************!*\
+  !*** ./models/Post.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Post)\n/* harmony export */ });\nclass Post {\n    constructor(title, img) {\n        this.title = title\n        this.data = new Date()\n        this.img = img\n    }\n\n    toString() {\n        return JSON.stringify({\n            title: this.title,\n            date: this.data.toJSON(),\n            img: this.img\n        })\n    }\n}\n\n\n//# sourceURL=webpack:///./models/Post.js?");
 
 /***/ }),
 
