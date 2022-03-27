@@ -2,6 +2,7 @@ const path = require("path")
 const HTMLWebpackPlugin = require("html-webpack-plugin")
 const {CleanWebpackPlugin} = require("clean-webpack-plugin")
 const CopyWebpackPlugin = require("copy-webpack-plugin")
+const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 
 module.exports = {
 
@@ -53,6 +54,10 @@ module.exports = {
                     to: path.resolve(__dirname, "dist")
                 }
             ]
+        }),
+
+        new MiniCssExtractPlugin({
+            filename: "[name].[contenthash].css"
         })
     ],
 
@@ -60,7 +65,7 @@ module.exports = {
         rules: [
             {
                 test: /\.css$/i,
-                use: ["style-loader", "css-loader"]
+                use: [MiniCssExtractPlugin.loader, "css-loader"]
             },
             {
                 test: /\.(png|jpe?g|gif|svg)$/i,
