@@ -4,6 +4,9 @@ const {CleanWebpackPlugin} = require("clean-webpack-plugin")
 const CopyWebpackPlugin = require("copy-webpack-plugin")
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 
+const isDev = process.env.NODE_ENV === "development"
+console.log("IS DEV:", isDev)
+
 module.exports = {
 
     context: path.resolve(__dirname, "src"),
@@ -14,7 +17,7 @@ module.exports = {
         main: "./index.js",
         analytics: "./analytics.js"
     },
-    
+
     output: {
         filename: "[name].[contenthash].js",
         path: path.resolve(__dirname, "dist")
@@ -37,7 +40,8 @@ module.exports = {
     },
 
     devServer: {
-        port: 4200
+        port: 4200,
+        hot: isDev
     },
 
     plugins: [
