@@ -1,3 +1,8 @@
+@import "roboto.css";
+
+body {
+    font-family: "Roboto", sans-serif;
+}
 .container {
     padding: 2rem 0;
     max-width: 1000px;
@@ -14,7 +19,5 @@ h1 {
     width: 350px;
     height: 300px;
     margin: 0 auto;
-    margin: 0 auto;
     display: block;
-
 }
