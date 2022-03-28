@@ -6,16 +6,16 @@
  * or disable the default devtool with "devtool: false".
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
-/******/ (() => { // webpackBootstrap
+/******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./analytics.js":
 /*!**********************!*\
   !*** ./analytics.js ***!
   \**********************/
-/***/ (() => {
+/***/ (function() {
 
-eval("const createAnalytics = () => {\n    let counter = 0\n    let isDestroyed = false\n\n    console.log(isDestroyed)\n\n    const listener = () => counter++\n\n    document.addEventListener(\"click\", listener)\n\n    return {\n        destroy() {\n            document.removeEventListener(\"click\", listener)\n            isDestroyed = true\n        },\n\n        getClicks() {\n            if(isDestroyed) {\n                return `Analytics is destroyed. Total clicks = ${counter}`\n            }\n            return counter\n        }\n    }\n}\n\nwindow.analytics = createAnalytics()\n\n//# sourceURL=webpack:///./analytics.js?");
+eval("var createAnalytics = function createAnalytics() {\n  var counter = 0;\n  var isDestroyed = false;\n  console.log(isDestroyed);\n\n  var listener = function listener() {\n    return counter++;\n  };\n\n  document.addEventListener(\"click\", listener);\n  return {\n    destroy: function destroy() {\n      document.removeEventListener(\"click\", listener);\n      isDestroyed = true;\n    },\n    getClicks: function getClicks() {\n      if (isDestroyed) {\n        return \"Analytics is destroyed. Total clicks = \".concat(counter);\n      }\n\n      return counter;\n    }\n  };\n};\n\nwindow.analytics = createAnalytics();\n\n//# sourceURL=webpack:///./analytics.js?");
 
 /***/ })
 

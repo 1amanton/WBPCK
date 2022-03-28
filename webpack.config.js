@@ -34,7 +34,7 @@ module.exports = {
     mode: "development",
 
     entry: {
-        main: "./index.js",
+        main: ["@babel/polyfill", "./index.js"],
         analytics: "./analytics.js"
     },
 
@@ -100,6 +100,16 @@ module.exports = {
             {
                 test: /\.(ttf|woff|woff2|eot)$/i,
                 use: ["file-loader"]
+            },
+            {
+                test: /\.m?js$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: "babel-loader",
+                    options: {
+                        presets: ['@babel/preset-env']
+                    }
+                }
             }
         ]
     }
