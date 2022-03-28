@@ -383,3 +383,12 @@ h1 {
     display: block;
 }
 
+/*!************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./styles/doc.sass ***!
+  \************************************************************************************************************/
+.sass {
+  font-size: 36px;
+  color: blueviolet;
+  padding: 1rem;
+  border: 1px solid blue; }
+
