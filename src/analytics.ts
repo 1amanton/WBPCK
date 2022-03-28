@@ -1,10 +1,10 @@
-const createAnalytics = () => {
+const createAnalytics = ():object => {
     let counter = 0
-    let isDestroyed = false
+    let isDestroyed: boolean = false
 
     console.log(isDestroyed)
 
-    const listener = () => counter++
+    const listener = ():number => counter++
 
     document.addEventListener("click", listener)
 
@@ -23,4 +23,4 @@ const createAnalytics = () => {
     }
 }
 
-window.analytics = createAnalytics()
+window["analytics"] = createAnalytics()
