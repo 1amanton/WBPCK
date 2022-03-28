@@ -19,17 +19,6 @@ eval("function _defineProperties(target, props) { for (var i = 0; i < props.leng
 
 /***/ }),
 
-/***/ "./index.js":
-/*!******************!*\
-  !*** ./index.js ***!
-  \******************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _models_Post__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @models/Post */ \"./models/Post.js\");\n/* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @styles/style.css */ \"./styles/style.css\");\n/* harmony import */ var _assets_jsonfile__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/jsonfile */ \"./assets/jsonfile.json\");\n/* harmony import */ var _assets_fox__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @assets/fox */ \"./assets/fox.png\");\n/* harmony import */ var _styles_doc_sass__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @styles/doc.sass */ \"./styles/doc.sass\");\n/* harmony import */ var _babel_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/babel.js */ \"./babel.js\");\n/* harmony import */ var _babel_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_js__WEBPACK_IMPORTED_MODULE_5__);\n\n\n\n\n\n\nvar post = new _models_Post__WEBPACK_IMPORTED_MODULE_0__[\"default\"](\"Webpack Post Title\", _assets_fox__WEBPACK_IMPORTED_MODULE_3__[\"default\"]);\nconsole.log(\"Post to String: \".concat(post.toString()));\nconsole.log(\"JSON\", _assets_jsonfile__WEBPACK_IMPORTED_MODULE_2__);\ndocument.querySelector(\".logo\").src = _assets_fox__WEBPACK_IMPORTED_MODULE_3__[\"default\"];\n\n//# sourceURL=webpack:///./index.js?");
-
-/***/ }),
-
 /***/ "./models/Post.js":
 /*!************************!*\
   !*** ./models/Post.js ***!
@@ -38,6 +27,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mod
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": function() { return /* binding */ Post; }\n/* harmony export */ });\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, \"prototype\", { writable: false }); return Constructor; }\n\nvar Post = /*#__PURE__*/function () {\n  function Post(title, img) {\n    _classCallCheck(this, Post);\n\n    this.title = title;\n    this.data = new Date();\n    this.img = img;\n  }\n\n  _createClass(Post, [{\n    key: \"toString\",\n    value: function toString() {\n      return JSON.stringify({\n        title: this.title,\n        date: this.data.toJSON(),\n        img: this.img\n      });\n    }\n  }]);\n\n  return Post;\n}();\n\n\n\n//# sourceURL=webpack:///./models/Post.js?");
+
+/***/ }),
+
+/***/ "./index.jsx":
+/*!*******************!*\
+  !*** ./index.jsx ***!
+  \*******************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _models_Post__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @models/Post */ \"./models/Post.js\");\n/* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @styles/style.css */ \"./styles/style.css\");\n/* harmony import */ var _assets_jsonfile__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/jsonfile */ \"./assets/jsonfile.json\");\n/* harmony import */ var _assets_fox__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @assets/fox */ \"./assets/fox.png\");\n/* harmony import */ var _styles_doc_sass__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @styles/doc.sass */ \"./styles/doc.sass\");\n/* harmony import */ var _babel_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/babel.js */ \"./babel.js\");\n/* harmony import */ var _babel_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_js__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ \"../node_modules/react/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-dom */ \"../node_modules/react-dom/index.js\");\n\n\n\n\n\n\n\n\nvar post = new _models_Post__WEBPACK_IMPORTED_MODULE_0__[\"default\"](\"Webpack Post Title\", _assets_fox__WEBPACK_IMPORTED_MODULE_3__[\"default\"]);\nconsole.log(\"Post to String: \".concat(post.toString()));\nconsole.log(\"JSON\", _assets_jsonfile__WEBPACK_IMPORTED_MODULE_2__);\n\nvar App = function App() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6__.createElement(\"div\", {\n    className: \"container\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6__.createElement(\"h1\", null, \"Red Fox\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6__.createElement(\"hr\", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6__.createElement(\"img\", {\n    className: \"logo\",\n    src: _assets_fox__WEBPACK_IMPORTED_MODULE_3__[\"default\"],\n    alt: \"\"\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6__.createElement(\"hr\", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6__.createElement(\"h1\", {\n    className: \"sass\"\n  }, \"SASS\"));\n};\n\n(0,react_dom__WEBPACK_IMPORTED_MODULE_7__.render)( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6__.createElement(App, null), document.getElementById(\"app\"));\n\n//# sourceURL=webpack:///./index.jsx?");
 
 /***/ }),
 
@@ -281,8 +281,8 @@ eval("module.exports = JSON.parse('{\"title\":\"I am JSON title\"}');\n\n//# sou
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["vendors-node_modules_babel_polyfill_lib_index_js"], function() { return __webpack_require__("../node_modules/@babel/polyfill/lib/index.js"); })
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_babel_polyfill_lib_index_js"], function() { return __webpack_require__("./index.js"); })
+/******/ 	__webpack_require__.O(undefined, ["vendors-node_modules_babel_polyfill_lib_index_js-node_modules_react-dom_index_js"], function() { return __webpack_require__("../node_modules/@babel/polyfill/lib/index.js"); })
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_babel_polyfill_lib_index_js-node_modules_react-dom_index_js"], function() { return __webpack_require__("./index.jsx"); })
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
