@@ -8,3 +8,8 @@ class Util {
 }
 
 console.log("Util Id:", Util.id)
+
+
+import ("lodash").then(_ => {
+    console.log(_.default.sum([2,2,2,5]))
+})
